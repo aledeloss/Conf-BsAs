@@ -1,0 +1,240 @@
+<!-- PENDIENTES:
+- ARREGLAR SCROLL horizontal
+- VER RESPONSIVE -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="estilos.css">
+
+  <title>Conf Bs As</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container">
+
+        <a class="navbar-brand" href="#">
+          <img src="codoacodo.png" alt="Logo codo a codo" width="120px">
+          Conf Bs As
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#carousel">La conferencia<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bsas">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#oradores">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#seOrador">Conviértete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+
+  
+    <header>
+    <!-- Carousel -->
+
+    <section class="carousel">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-caption text-right destacado">
+
+          <h1 class="display-4">Conf Bs As</h1>
+
+          <p class="lead  d-none d-sm-inline-block">Llega por primera vez a Argentina un evento para compartir con nuestra comunidad el
+            conocimiento y la experiencia de los expertos que están creando el mundo de internet. Ven a conocer a
+            miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para
+            ti. Te esperamos!</p>
+
+          <div class="contenedor-botones">
+            <button class="btn btn-lg btn-outline-light m-1">Quiero ser orador</button>
+            <button class="btn btn-lg btn-success m-1">Comprar tickets</button>
+          </div>
+
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img class="carousel-img d-block w-100 h-100" src="ba1.jpg" alt="Foto 1">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img d-block w-100 h-100 overflow-hidden" src="ba2.jpg" alt="Foto 2">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img d-block w-100 h-100 overflow-hidden" src="ba3.jpg" alt="Foto 3">
+          </div>
+        </div>
+
+    </section>
+
+  </header>
+
+  <!-- Fin del Header -->
+
+  <!-- Oradores -->
+  <section id="oradores" class="container mt-5">
+
+    <div class="row d-flex flex-column align-items-center">
+      <h2 class="text-uppercase text-center"><span class="spanTitulo">Conocé a los </span>oradores</h2>
+    </div>
+
+    <div class="row d-flex justify-content-center speakers">
+
+      <div class="card m-3" style="width: 20rem;">
+        <img src="./speakers/steve.jpg" class="card-img-top" alt="Steve Jobs">
+        <div class="card-body">
+          <span class="badge badge badge-warning">Javascript</span>
+          <span class="badge badge badge-primary">React</span>
+          <h3>Steve Jobs</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam reiciendis reprehenderit ea
+            rerum id veritatis.</p>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 20rem;">
+        <img src="./speakers/bill.jpg" class="card-img-top" alt="Bill Gates">
+        <div class="card-body">
+          <span class="badge badge badge-warning">Javascript</span>
+          <span class="badge badge badge-primary">React</span>
+          <h3>Steve Jobs</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam reiciendis reprehenderit ea
+            rerum id veritatis.</p>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 20rem;">
+        <img src="./speakers/ada.jpeg" class="card-img-top" alt="Ada Loverace">
+        <div class="card-body">
+          <span class="badge badge badge-secondary">Negocios</span>
+          <span class="badge badge badge-danger">Startups</span>
+          <h3>Steve Jobs</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam reiciendis reprehenderit ea
+            rerum id veritatis.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BsAs -->
+
+  <!-- /////Esta sección queda fuera de los márgenes y genera un scroll horizontal, no sé por qué :(/////////// -->
+
+  <section id="bsas" class="row bg-dark mt-5">
+
+    <img class="img-fluid col-md-6" src="./images/honolulu.jpg" alt="Ciudad de Buenos Aires">
+
+    <div class="col-md-6 p-4 m-4 m-md-0 text-light">
+      <h2>Bs As - Octubre 2020</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fuga rem dolor, dolore consectetur
+        cupiditate explicabo quibusdam culpa repellat autem ducimus ab et quam temporibus natus esse nihil! Id,
+        eius?</p>
+      <button class="btn btn-outline-light">Conocé más</button>
+    </div>
+
+  </section>
+
+  <!-- Se un orador -->
+  <section id="seOrador" class="container mt-5">
+
+    <div class="row d-flex flex-column align-items-center">
+      <h2 class="text-uppercase text-center"><span class="spanTitulo">Conviértete en un </span>orador</h2>
+      <p class="justify-content-center mx-2 text-center">Anotate como orador para dar una <abbr
+          title="¿Qué es una charla ignite?">charla ignite</abbr>. Cuéntanos de qué quieres hablar.</p>
+    </div>
+
+    <form class="container col-md-10 col-lg-8">
+
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Apellido">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="¿Sobre qué quieres hablar?"
+          rows="3"></textarea>
+        <p class="text-muted text-small leyenda">Recuerda incluir un título para tu charla.</p>
+      </div>
+
+      <button type="button" class="container btn btn-lg btn-block btn-success col-12">Enviar</button>
+
+    </form>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer" class="container-fluid py-4 align-items-center">
+
+    <nav class="container row d-flex justify-content-between align-items-center mx-auto">
+
+      <a class="nav-link text-light col-12 col-md-1 d-flex justify-content-center" href="">Preguntas Frecuentes</a>
+      <a class="nav-link text-light col-12 col-md-1 d-flex justify-content-center" href="">Contáctanos</a>
+      <a class="nav-link text-light col-12 col-md-1 d-flex justify-content-center" href="">Prensa</a>
+      <a class="nav-link text-light col-12 col-md-1 d-flex justify-content-center" href="">Conferencia</a>
+      <a class="nav-link text-light col-12 col-md-1 d-flex justify-content-center" href="">Términos y condiciones</a>
+      <a class="nav-link text-light col-12 col-md-1 d-flex justify-content-center" href="">Privacidad</a>
+      <a class="nav-link text-light col-12 col-md-1 d-flex justify-content-center" href="">Estudiantes</a>
+
+    </nav>
+  </footer>
+
+  <!-- Fin del FOOTER -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

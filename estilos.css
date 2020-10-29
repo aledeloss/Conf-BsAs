@@ -1,0 +1,55 @@
+/* * {
+    border: solid firebrick;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel img {
+    filter: brightness(.6);
+    min-height:600px;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #214d67;
+    color: white;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.spanTitulo {
+    font-size: 15px;
+    display: block;
+}
+
+.destacado {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    margin-bottom: 20%;
+}
+
+.leyenda {
+    font-size: 13px;
+}
+
+#bsas img {
+    max-height: 400px;
+}
+
+.carousel-img {
+    object-fit: cover;
+}
+;
+
+@media (min-width: 600px) {
+
+    /* #bsas img {
+        max-height: none;
+    } */
+}
